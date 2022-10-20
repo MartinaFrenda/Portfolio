@@ -13,8 +13,16 @@
 }
 
 h1.intro{
-    padding-top: 10%;
+    padding-top: 20%;
     font-size: 3rem;
+}
+
+.presentacion{
+    margin-top: 4rem;
+}
+
+h4.presentacion{
+    margin-top: 8rem;
 }
 
 
