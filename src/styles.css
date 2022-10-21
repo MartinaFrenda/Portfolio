@@ -25,4 +25,33 @@ h4.presentacion{
     margin-top: 8rem;
 }
 
+.educacion{
+    margin-top: 3rem
+}
+h1.educacionvioleta{
+    color: #7E429B;
+}
+.educaciontexto{
+    margin-top: 1rem;
+}
+
+
+
+@media screen and (max-width: 414px) {
+
+    h1.intro{
+        padding-top: 2rem;
+        font-size: 2rem;
+    }
+    .presentacion{
+        margin-top: 2rem;
+    }
+    .avatar{
+        width: 125px;
+    }
+    h1.educacionvioleta{
+        text-align: center;
+    }
+    
+}
 
