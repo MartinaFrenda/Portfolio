@@ -26,15 +26,40 @@ h4.presentacion{
 }
 
 .educacion{
-    margin-top: 3rem
+    margin-top: 4rem
 }
 h1.educacionvioleta{
     color: #7E429B;
 }
 .educaciontexto{
-    margin-top: 1rem;
+    margin-top: 2rem;
 }
 
+.contacto{
+    background-color: #000;
+    margin-top: 4rem;
+}
+.texto{
+    color: #fff;
+}
+h1.contactovioleta{
+    color: #7E429B;
+}
+.list-group{
+    --bs-list-group-bg: transparent;
+}
+.ist-group-item{
+    padding: 10px 20px;
+}
+.fa-brands.fa-instagram.fa-2x:hover {
+    color: #f06dd8;
+}
+.fa-brands.fa-linkedin.fa-2x:hover {
+    color: rgb(44, 110, 252);
+}
+.fa-brands.fa-github.fa-2x:hover {
+    color: rgb(22, 226, 42);
+}
 
 
 @media screen and (max-width: 414px) {
