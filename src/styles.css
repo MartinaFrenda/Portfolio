@@ -1,5 +1,6 @@
 *{
     font-family: "Fira Sans", sans-serif;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 
 .letras-negras {
@@ -60,7 +61,13 @@ h1.contactovioleta{
 .fa-brands.fa-github.fa-2x:hover {
     color: rgb(22, 226, 42);
 }
+a:link {color:#ffffff;}
+a:visited {color:#ffffff;}
+a:active {color:#ffffff;}
 
+h6.texto{
+    padding: 2rem
+}
 
 @media screen and (max-width: 414px) {
 
