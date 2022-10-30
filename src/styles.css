@@ -134,6 +134,11 @@ h6.texto{
     margin-top: 4rem;
 }
 
+/* panel */
+.nombre{
+    margin-top: 0.7rem;
+}
+
 @media screen and (max-width: 414px) {
 
     h1.intro{
