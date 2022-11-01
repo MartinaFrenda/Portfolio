@@ -154,7 +154,9 @@ li.vertical{
     margin: 0;
     padding: 1rem 0;
 }
-
+.redes{
+    margin-top: 1.5rem;
+}
 
 @media screen and (max-width: 414px) {
 

@@ -71,18 +71,84 @@ integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbs
             </ul>
         </nav>
 
-      <div class="list-group" id="list-tab" role="tablist">
-       </div>
     </div>
     <div class="col-10 panel">
       <div class="tab-content" id="nav-tabContent">
-        <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-banner-list">texto 1</div>
-        <div class="tab-pane fade" id="list-presentacion" role="tabpanel" aria-labelledby="list-presentacion-list">texto 2</div>
-        <div class="tab-pane fade" id="list-educacion" role="tabpanel" aria-labelledby="list-educacion-list">texto 3</div>
+        <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-banner-list">
+            <div class="container px-5">
+                <h1 class="violeta">Banner</h1>
+                <form>
+                    <div class="mb-3 redes">
+                      <label for="imagen" class="form-label">Imagen</label>
+                      <input type="text" class="form-control" id="imagen">
+                    </div>
+                    <div class="mb-3 redes">
+                      <label for="texto" class="form-label">Texto</label>
+                      <input type="text" class="form-control" id="texto">
+                    </div>
+                    <button type="submit" class="btn btn-primary redes">Guardar</button>
+                  </form>
+                </div>
+        </div>
+        <div class="tab-pane fade" id="list-presentacion" role="tabpanel" aria-labelledby="list-presentacion-list">
+            <div class="container px-5">
+                <h1 class="violeta">Presentación</h1>
+                <form>
+                    <div class="mb-3 redes">
+                      <label for="fotoperfil" class="form-label">Foto de perfil</label>
+                      <input type="text" class="form-control" id="fotoperfil">
+                    </div>
+                    <div class="mb-3 redes">
+                      <label for="texto" class="form-label">Texto</label>
+                      <input type="text" class="form-control" id="texto">
+                    </div>
+                    <button type="submit" class="btn btn-primary redes">Guardar</button>
+                  </form>
+                </div>
+        </div>
+        <div class="tab-pane fade" id="list-educacion" role="tabpanel" aria-labelledby="list-educacion-list">
+            <div class="container px-5">
+                <h1 class="violeta">Educación</h1>
+                <form>
+                    <div class="mb-3 redes">
+                      <label for="colegio" class="form-label">Colegio Modelo Lomas</label>
+                      <input type="text" class="form-control" id="colegio">
+                    </div>
+                    <div class="mb-3 redes">
+                      <label for="curso" class="form-label">Curso Argentina Programa</label>
+                      <input type="text" class="form-control" id="curso">
+                    </div>
+                    <div class="mb-3 redes">
+                        <label for="facultad" class="form-label">Facultad</label>
+                        <input type="text" class="form-control" id="facultad">
+                      </div>
+                    <button type="submit" class="btn btn-primary redes">Guardar</button>
+                  </form>
+                </div>
+        </div>
         <div class="tab-pane fade" id="list-experiencia" role="tabpanel" aria-labelledby="list-experiencia-list">texto 4</div>
         <div class="tab-pane fade" id="list-habilidades" role="tabpanel" aria-labelledby="list-habilidades-list">texto 5</div>
         <div class="tab-pane fade" id="list-proyectos" role="tabpanel" aria-labelledby="list-proyectos-list">texto 6</div>
-        <div class="tab-pane fade" id="list-contacto" role="tabpanel" aria-labelledby="list-contacto-list">texto 7</div>
+        <div class="tab-pane fade" id="list-contacto" role="tabpanel" aria-labelledby="list-contacto-list">
+            <div class="container px-5">
+            <h1 class="violeta">Redes sociales</h1>
+            <form>
+                <div class="mb-3 redes">
+                  <label for="instagram" class="form-label">Instagram</label>
+                  <input type="text" class="form-control" id="instagram">
+                </div>
+                <div class="mb-3 redes">
+                  <label for="linkedin" class="form-label">Linkedin</label>
+                  <input type="text" class="form-control" id="linkedin">
+                </div>
+                <div class="mb-3 redes">
+                    <label for="github" class="form-label">Github</label>
+                    <input type="text" class="form-control" id="github">
+                  </div>
+                <button type="submit" class="btn btn-primary redes">Guardar</button>
+              </form>
+            </div>
+        </div>
       </div>
     </div>
   </div>
