@@ -1,0 +1,6 @@
+/* navbar */
+.letras-negras {
+    filter: invert(1);
+    -webkit-filter: invert(1);
+    -moz-filter: invert(1);
+}

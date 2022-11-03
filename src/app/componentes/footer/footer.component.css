@@ -1,0 +1,29 @@
+/* contacto */
+.contacto{
+    background-color: #000;
+    margin-top: 4rem;
+}
+.texto{
+    color: #fff;
+}
+.list-group{
+    --bs-list-group-bg: transparent;
+}
+.ist-group-item{
+    padding: 10px 20px;
+}
+.fa-brands.fa-instagram.fa-2x:hover {
+    color: #f06dd8;
+}
+.fa-brands.fa-linkedin.fa-2x:hover {
+    color: rgb(44, 110, 252);
+}
+.fa-brands.fa-github.fa-2x:hover {
+    color: rgb(22, 226, 42);
+}
+a.iconos:link {color:#ffffff;}
+a.iconos:visited {color:#ffffff;}
+a.iconos:active {color:#ffffff;}
+h6.texto{
+    padding: 2rem
+}
