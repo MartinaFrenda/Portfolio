@@ -1,0 +1,69 @@
+/* navbar */
+.letras-negras {
+    filter: invert(1);
+    -webkit-filter: invert(1);
+    -moz-filter: invert(1);
+}
+/* banner */
+.card-img {
+    opacity: 0.5;
+}
+h1.intro{
+    padding-top: 20%;
+    font-size: 3rem;
+}
+/* presentacion */
+.presentacion{
+    margin-top: 4rem;
+}
+h4.presentacion{
+    margin-top: 100rem;
+}
+  /* educacion */
+  .educacion{
+    margin-top: 4rem
+}
+.educaciontexto{
+    margin-top: 2rem;
+}
+/* experiencia */
+.experiencia{
+    margin-top: 4rem;
+}
+/* habilidades */
+.habilidades{
+    margin-top: 4rem;
+}
+/* proyectos */
+.proyectos{
+    margin-top: 4rem;
+}
+/* contacto */
+.contacto{
+    background-color: #000;
+    margin-top: 4rem;
+}
+.texto{
+    color: #fff;
+}
+.list-group{
+    --bs-list-group-bg: transparent;
+}
+.ist-group-item{
+    padding: 10px 20px;
+}
+.fa-brands.fa-instagram.fa-2x:hover {
+    color: #f06dd8;
+}
+.fa-brands.fa-linkedin.fa-2x:hover {
+    color: rgb(44, 110, 252);
+}
+.fa-brands.fa-github.fa-2x:hover {
+    color: rgb(22, 226, 42);
+}
+a.iconos:link {color:#ffffff;}
+a.iconos:visited {color:#ffffff;}
+a.iconos:active {color:#ffffff;}
+h6.texto{
+    padding: 2rem
+}
