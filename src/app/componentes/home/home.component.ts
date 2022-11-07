@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { InfoPaginaService } from 'src/app/services/info-pagina.service';
 
 @Component({
   selector: 'app-home',
@@ -9,7 +10,7 @@ export class HomeComponent implements OnInit {
 
   anio: number = new Date().getFullYear();
 
-  constructor() { }
+  constructor(public _servicio: InfoPaginaService) { }
 
   ngOnInit(): void {
   }

@@ -77,15 +77,15 @@
                     <h1 class="violeta">Educación</h1>
                     <form>
                         <div class="mb-3 redes">
-                          <label for="colegio" class="form-label">Colegio Modelo Lomas</label>
+                          <label for="colegio" class="form-label"> {{_servicio.info.colegio}} </label>
                           <input type="text" class="form-control" id="colegio">
                         </div>
                         <div class="mb-3 redes">
-                          <label for="curso" class="form-label">Curso Argentina Programa</label>
+                          <label for="curso" class="form-label">{{_servicio.info.curso}}</label>
                           <input type="text" class="form-control" id="curso">
                         </div>
                         <div class="mb-3 redes">
-                            <label for="facultad" class="form-label">Universidad Tecnológica Nacional</label>
+                            <label for="facultad" class="form-label">{{_servicio.info.facultad}}</label>
                             <input type="text" class="form-control" id="facultad">
                           </div>
                         <button type="submit" class="btn btn-primary redes">Guardar</button>

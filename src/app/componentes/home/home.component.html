@@ -1,10 +1,10 @@
 <!--banner-->
 <section class="banner">
     <div class="card text-bg-dark text-center">
-      <img src="./assets/img/banner1.jpg" class="card-img img-fluid" alt="banner">
-      <div class="card-img-overlay">
-        <h1 class="card-title intro"> Hola! soy Martina </h1>
-        <h5 class="card-text">Desarrollador web</h5>
+      <img src="{{_servicio.info.fotoBanner}}" class="card-img img-fluid" alt="banner">
+        <div class="card-img-overlay">
+        <h1 class="card-title intro"> {{_servicio.info.textoBanner}} </h1>
+        <h5 class="card-text"> {{_servicio.info.puesto}} </h5>
       </div>
     </div>
     </section>
@@ -13,10 +13,10 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-2 flex-colum text-center text-lg-start">
-          <img src="./assets/img/memoji3.webp" class="rounded-circle img-fluid avatar" width="200" alt="avatar">
+          <img src="{{_servicio.info.fotoPresentacion}}" class="rounded-circle img-fluid avatar" width="200" alt="avatar">
         </div>
         <div class="col-lg-10 flex-colum text-center text-lg-start presentacion">
-          <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, impedit. Illum commodi, consectetur tempora exercitationem aliquid mollitia est dolor tempore earum, deleniti fuga, officia in eius voluptatem. Culpa, veniam quaerat?</h4>
+          <h4> {{_servicio.info.textoPresentacion}} </h4>
         </div>
       </div>
     </div>
@@ -26,11 +26,11 @@
     <div class="container">
       <h1 class="violeta">Educación</h1>
       <div class="educaciontexto">
-      <h4><b>Colegio Modelo Lomas:</b> título secundario, bachiller orientado en economía y administración; 2021.</h4>
-      <br>
-      <h4><b>Curso Argentina Programa:</b> desarrollador web Full-Stack junior.</h4>
-      <br>
-       <h4><b>Universidad Tecnológica Nacional:</b> ingresante en la carrera de ingeniería en sistemas de información.</h4>
+        <h4><b> {{_servicio.info.colegio}} </b> {{_servicio.info.puestoColegio}} </h4>
+        <br>
+        <h4><b> {{_servicio.info.curso}} </b> {{_servicio.info.puestoCurso}} </h4>
+        <br>
+         <h4><b> {{_servicio.info.facultad}} </b> {{_servicio.info.puestoFacultad}} </h4>
      </div>
     </div>
   </section>

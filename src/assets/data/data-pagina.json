@@ -1,9 +1,15 @@
 {
+    "fotoPresentacion": "./assets/img/memoji3.webp",
+    "textoPresentacion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, impedit. Illum commodi, consectetur tempora exercitationem aliquid mollitia est dolor tempore earum, deleniti fuga, officia in eius voluptatem. Culpa, veniam quaerat?",
+    "fotoBanner": "./assets/img/banner1.jpg",
     "textoBanner": "Hola! soy Martina",
     "puesto": "Desarrollador web",
-    "colegio": "Colegio Modelo Lomas: título secundario, bachiller orientado en economía y administración; 2021.",
-    "facultad": "Universidad Tecnológica Nacional: ingresante en la carrera de ingeniería en sistemas de información.",
-    "curso": "Curso Argentina Programa: desarrollador web Full-Stack junior.",
+    "colegio": "Colegio Modelo Lomas:",
+    "puestoColegio": " título secundario, bachiller orientado en economía y administración; 2021.",
+    "facultad": "Universidad Tecnológica Nacional:",
+    "puestoFacultad": " ingresante en la carrera de ingeniería en sistemas de información.",
+    "curso": "Curso Argentina Programa:",
+    "puestoCurso": " desarrollador web Full-Stack junior.",
 
     "correo": "martufrenda5@gmail.com",
     "instagram": "https://www.instagram.com/martufrenda/",
