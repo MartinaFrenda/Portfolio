@@ -25,14 +25,15 @@
             </div>
             <div class="col-8">
               <h1 class="violeta logintitulo">Iniciar Sesión</h1>
-              <form>
+              <form [formGroup]="form" (ngSubmit)="onEnviar($event)">
                   <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <label for="Email" class="form-label">Email</label>
+                    <input type="email" class="form-control" formControlName="mail">
                   </div>
                   <div class="mb-3">
-                    <label for="exampleInputPassword1" class="form-label">Contraseña</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1">
+                  <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                <!--<input type="password" _ngcontent-hvy-c50 formControlName="password" class="form-control ng-untouched ng-pristine ng-invalid" ng-reflect-name="password"> -->
+                  <input type="password" class="form-control" formControlName="password">
                   </div>
                   <button type="submit" class="btn btn-primary" routerLink="/panel">Entrar</button>
                   <small><a routerLink="/registro">Registrarse</a></small>

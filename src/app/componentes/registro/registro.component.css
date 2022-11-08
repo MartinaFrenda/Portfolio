@@ -4,3 +4,10 @@
     -webkit-filter: invert(1);
     -moz-filter: invert(1);
 }
+/* login */
+.login{
+    height: 75vh;
+}
+.logintitulo{
+    margin-top: 4rem;
+}
