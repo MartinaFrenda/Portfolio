@@ -12,6 +12,11 @@ export class AuthService {
 
   constructor(private http: HttpClient, private router: Router) { }
 
+  isLoggedIn() {
+    const token = localStorage.getItem('token'); // get token from local storage
+    return true
+  }
+
   login(email: string, password: string) {
     this.http.post(this.url + '/autenticate', {email: email, password: password} )
     .subscribe((resp: any) => {
@@ -25,4 +30,5 @@ logout(){
 public get logIn(): boolean {
   return (localStorage.getItem('token') !== null );
 }
+
 }
