@@ -2,6 +2,7 @@
 .contacto{
     background-color: #000;
     margin-top: 4rem;
+    margin-bottom: 0;
 }
 .texto{
     color: #fff;
@@ -26,4 +27,7 @@ a.iconos:visited {color:#ffffff;}
 a.iconos:active {color:#ffffff;}
 h6.texto{
     padding: 2rem
+}
+.derechos{
+    margin-bottom: 0;
 }

@@ -14,11 +14,9 @@ h1.intro{
 }
 /* presentacion */
 .presentacion{
-    margin-top: 4rem;
+    margin-top: 2rem;
 }
-h4.presentacion{
-    margin-top: 100rem;
-}
+
   /* educacion */
   .educacion{
     margin-top: 4rem
@@ -118,6 +116,9 @@ h4.presentacion{
 a.iconos:link {color:#ffffff;}
 a.iconos:visited {color:#ffffff;}
 a.iconos:active {color:#ffffff;}
-h6.texto{
-    padding: 2rem
+p.texto{
+    padding: 1rem;
+}
+.derechos{
+    margin-bottom: 0;
 }
