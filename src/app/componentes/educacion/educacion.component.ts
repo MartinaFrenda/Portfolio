@@ -8,9 +8,18 @@ import { InfoPaginaService } from 'src/app/services/info-pagina.service';
 })
 export class EducacionComponent implements OnInit {
 
+  educacion : any = [];
+
   constructor(public _servicio: InfoPaginaService) { }
 
   ngOnInit(): void {
+     //almacenamiento de datos
+     this._servicio.getData().subscribe(data => {
+      //mostrar en consola
+      console.log(data);
+      //informaciona a mostrar
+      this.educacion = data.educacion;
+    })
   }
 
 }

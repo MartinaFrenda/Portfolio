@@ -1,13 +1,11 @@
 <!--Educacióm-->
 <section class="educacion">
-    <div class="container">
-      <h1 class="violeta">Educación</h1>
-      <div class="educaciontexto">
-      <h4><b> {{_servicio.info.colegio}} </b> {{_servicio.info.puestoColegio}} </h4>
-      <br>
-      <h4><b> {{_servicio.info.curso}} </b> {{_servicio.info.puestoCurso}} </h4>
-      <br>
-       <h4><b> {{_servicio.info.facultad}} </b> {{_servicio.info.puestoFacultad}} </h4>
-     </div>
-    </div>
-  </section>
+  <div class="container">
+    <h1 class="violeta">Educación</h1>
+    <div class="educaciontexto" *ngFor="let educacion of educacion">
+       <h4> <b>{{ educacion.institucion }}</b> {{ educacion.titulo}} </h4>
+       <h4> {{ educacion.descripcion }} </h4>
+       <h6> {{ educacion.inicio }}/{{ educacion.fin }} </h6>
+      </div>
+   </div>
+</section>

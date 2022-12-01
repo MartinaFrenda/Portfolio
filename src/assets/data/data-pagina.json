@@ -1,22 +1,11 @@
 {
-    "fotoPresentacion": "./assets/img/memoji3.webp",
-    "textoPresentacion": "ipsum dolor sit amet consectetur adipisicing elit. Est, impedit. Illum commodi, consectetur tempora exercitationem aliquid mollitia est dolor tempore earum, deleniti fuga, officia in eius voluptatem. Culpa, veniam quaerat?",
-    "fotoBanner": "./assets/img/banner1.jpg",
-    "textoBanner": "Hola! soy Martina",
-    "puesto": "Desarrollador web",
-
-   "logoargentina": "./assets/img/logoArgPrograma.png",
-    "correo": "martufrenda5@gmail.com",
-    "instagram": "https://www.instagram.com/martufrenda/",
-    "linkedin": "http://linkedin.com/in/MartinaLaraFrenda",
-    "github": "https://github.com/MartinaFrenda",
-
     "banner": [
         {
             "id": 1,
             "foto": "./assets/img/banner1.jpg",
             "texto": "Hola! soy Martina",
-            "puesto": "Desarrollador web"
+            "puesto": "Desarrollador web",
+            "logoargentina": "./assets/img/logoArgPrograma.png"
         }
     ],
 
@@ -42,7 +31,7 @@
             "institucion": "Universidad Tecnológica Nacional",
             "titulo": "",
             "inicio": "2023",
-            "fin": "2028",
+            "fin": "cursando",
             "descripcion": "estudiante de la carrera de ingeniería en sistemas de información" 
         },
         {

@@ -1,10 +1,10 @@
 <!--banner-->
 <section class="banner">
-    <div class="card text-bg-dark text-center">
-      <img src="{{_servicio.info.fotoBanner}}" class="card-img img-fluid" alt="banner">
+  <div class="card text-bg-dark text-center" *ngFor="let banner of banner">
+    <img [src]="banner.foto" class="card-img img-fluid" alt="banner">
       <div class="card-img-overlay">
-      <h1 class="card-title intro"> {{_servicio.info.textoBanner}} </h1>
-      <h5 class="card-text"> {{_servicio.info.puesto}} </h5>
-      </div>
+      <h1 class="card-title intro"> {{banner.texto}} </h1>
+      <h5 class="card-text"> {{banner.puesto}} </h5>
     </div>
-    </section>
+  </div>
+  </section>

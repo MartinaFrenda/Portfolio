@@ -1,7 +1,8 @@
 <!--Proyectos-->
 <section class="proyectos">
-    <div class="container">
-      <h1 class="violeta">Proyectos</h1>
-      <h4>...</h4>
-    </div>
-  </section>
+  <div class="container" *ngFor="let proyectos of proyectos">
+    <h1 class="violeta">Proyectos</h1>
+    <h4> {{proyectos.empresa}} </h4>
+    <h6> {{proyectos.inicio}}/{{proyectos.fin}} </h6>
+  </div>
+</section>

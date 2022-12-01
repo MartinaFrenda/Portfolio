@@ -1,8 +1,8 @@
   <!--navbar-->
   <nav class="navbar navbar-expand-lg">
-    <div class="container-fluid">
+    <div class="container-fluid" *ngFor="let banner of banner">
       <a class="navbar-brand" routerLink="/home">
-        <img src="{{_servicio.info.logoargentina}}" alt="logoArgPrograma" class="letras-negras" width="150">
+        <img [src]="banner.logoargentina" alt="logoArgPrograma" class="letras-negras" width="150">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" 
       aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -47,15 +47,16 @@
       <div class="educaciontexto" *ngFor="let educacion of educacion">
          <h4> <b>{{ educacion.institucion }}</b> {{ educacion.titulo}} </h4>
          <h4> {{ educacion.descripcion }} </h4>
-         <h6> {{ educacion.inicio }}-{{ educacion.fin }} </h6>
+         <h6> {{ educacion.inicio }}/{{ educacion.fin }} </h6>
         </div>
      </div>
   </section>
 <!--Experiencia-->
 <section class="experiencia">
-    <div class="container">
+    <div class="container" *ngFor="let experiencia of experiencia">
       <h1 class="violeta">Experiencia</h1>
-      <h4>...</h4>
+      <h4><b>{{experiencia.empresa}}</b> {{experiencia.puesto}} </h4>
+      <h6> {{experiencia.inicio}}/{{experiencia.fin}} </h6>
     </div>
   </section>
   <!--Habilidades-->
@@ -80,11 +81,12 @@
   </section>
 <!--Proyectos-->
 <section class="proyectos">
-    <div class="container">
-      <h1 class="violeta">Proyectos</h1>
-      <h4>...</h4>
-    </div>
-  </section>
+  <div class="container" *ngFor="let proyectos of proyectos">
+    <h1 class="violeta">Proyectos</h1>
+    <h4> {{proyectos.empresa}} </h4>
+    <h6> {{proyectos.inicio}}/{{proyectos.fin}} </h6>
+  </div>
+</section>
 
   <footer>
     <!--Contacto-->  
@@ -102,7 +104,7 @@
          </div>
          <div class="col-lg-6 flex-colum text-center text-lg-start">
           <h4 class="texto">Mi correo electrónico</h4>
-          <h5 class="texto"> <a href="mailTo:{{ contacto.correo }}" target="_blank" class="iconos text-decoration-none">{{ _servicio.info.correo }} </a></h5>
+          <h6 class="texto">{{contacto.correo }}</h6>
          </div>
        </div>
        <p class="text-center texto derechos"> <small><i class="fa-regular fa-copyright"></i>Copyright Martina Lara Frenda - {{ anio }} </small></p>
