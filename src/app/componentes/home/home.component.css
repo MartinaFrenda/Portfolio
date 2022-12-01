@@ -117,9 +117,7 @@ h1.intro{
 a.iconos:link {color:#ffffff;}
 a.iconos:visited {color:#ffffff;}
 a.iconos:active {color:#ffffff;}
-p.texto{
-    padding: 1rem;
-}
 .derechos{
     margin-bottom: 0;
+    padding-bottom: 1rem;
 }

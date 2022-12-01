@@ -35,7 +35,7 @@
           <img [src]="presentacion.foto" class="rounded-circle img-fluid avatar" width="200" alt="avatar">
         </div>
         <div class="col-lg-10 flex-colum text-center text-lg-start presentacion">
-          <h4> {{ presentacion.texto }} </h4>
+          <h5> {{ presentacion.texto }} </h5>
         </div>
       </div>
     </div>
@@ -43,10 +43,10 @@
 <!--Educacióm-->
 <section class="educacion">
     <div class="container">
-      <h1 class="violeta">Educación</h1>
+      <h2 class="violeta">Educación</h2>
       <div class="educaciontexto" *ngFor="let educacion of educacion">
-         <h4> <b>{{ educacion.institucion }}</b> {{ educacion.titulo}} </h4>
-         <h4> {{ educacion.descripcion }} </h4>
+         <h5> <b>{{ educacion.institucion }}</b> {{ educacion.titulo}} </h5>
+         <h5> {{ educacion.descripcion }} </h5>
          <h6> {{ educacion.inicio }}/{{ educacion.fin }} </h6>
         </div>
      </div>
@@ -54,15 +54,15 @@
 <!--Experiencia-->
 <section class="experiencia">
     <div class="container" *ngFor="let experiencia of experiencia">
-      <h1 class="violeta">Experiencia</h1>
-      <h4><b>{{experiencia.empresa}}</b> {{experiencia.puesto}} </h4>
+      <h2 class="violeta">Experiencia</h2>
+      <h5><b>{{experiencia.empresa}}</b> {{experiencia.puesto}} </h5>
       <h6> {{experiencia.inicio}}/{{experiencia.fin}} </h6>
     </div>
   </section>
   <!--Habilidades-->
 <section class="habilidades">
     <div class="container">
-      <h1 class="violeta habilidades">Habilidades</h1>
+      <h2 class="violeta habilidades">Habilidades</h2>
       <div class="progress-circle-container" *ngFor="let habilidades of habilidades">
         <div class="progress-circle progress-70">
           <span>{{ habilidades.nombre }}</span>
@@ -82,8 +82,8 @@
 <!--Proyectos-->
 <section class="proyectos">
   <div class="container" *ngFor="let proyectos of proyectos">
-    <h1 class="violeta">Proyectos</h1>
-    <h4> {{proyectos.empresa}} </h4>
+    <h2 class="violeta">Proyectos</h2>
+    <h5> {{proyectos.empresa}} </h5>
     <h6> {{proyectos.inicio}}/{{proyectos.fin}} </h6>
   </div>
 </section>
@@ -92,10 +92,10 @@
     <!--Contacto-->  
     <section class="contacto" id="contacto">
       <div class="container">
-        <h1 class="violeta text-center text-lg-start">Contacto</h1>
+        <h2 class="violeta text-center text-lg-start">Contacto</h2>
          <div class="row" *ngFor="let contacto of contacto">
           <div class="col-lg-6 flex-colum text-center text-lg-start">
-          <h4 class="texto">Mis redes sociales</h4>
+          <h6 class="texto">Mis redes sociales</h6>
           <ul style="list-style: none" class="list-group list-group-horizontal texto">
             <li class="ist-group-item"> <a class="iconos" [href]="contacto.instagram" target="_blank"><i class="fa-brands fa-instagram fa-2x"></i></a></li>
             <li class="ist-group-item"> <a class="iconos" [href]="contacto.linkedin" target="_blank"><i class="fa-brands fa-linkedin fa-2x"></i></a></li>
@@ -103,8 +103,8 @@
           </ul>
          </div>
          <div class="col-lg-6 flex-colum text-center text-lg-start">
-          <h4 class="texto">Mi correo electrónico</h4>
-          <h6 class="texto">{{contacto.correo }}</h6>
+          <h6 class="texto">Mi correo electrónico</h6>
+          <p class="texto">{{contacto.correo}}</p>
          </div>
        </div>
        <p class="text-center texto derechos"> <small><i class="fa-regular fa-copyright"></i>Copyright Martina Lara Frenda - {{ anio }} </small></p>
