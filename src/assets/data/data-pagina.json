@@ -4,16 +4,107 @@
     "fotoBanner": "./assets/img/banner1.jpg",
     "textoBanner": "Hola! soy Martina",
     "puesto": "Desarrollador web",
-    "colegio": "Colegio Modelo Lomas:",
-    "puestoColegio": " título secundario, bachiller orientado en economía y administración; 2021.",
-    "facultad": "Universidad Tecnológica Nacional:",
-    "puestoFacultad": " ingresante en la carrera de ingeniería en sistemas de información.",
-    "curso": "Curso Argentina Programa:",
-    "puestoCurso": " desarrollador web Full-Stack junior.",
 
+   "logoargentina": "./assets/img/logoArgPrograma.png",
     "correo": "martufrenda5@gmail.com",
     "instagram": "https://www.instagram.com/martufrenda/",
     "linkedin": "http://linkedin.com/in/MartinaLaraFrenda",
-    "github": "https://github.com/MartinaFrenda"
+    "github": "https://github.com/MartinaFrenda",
+
+    "banner": [
+        {
+            "id": 1,
+            "foto": "./assets/img/banner1.jpg",
+            "texto": "Hola! soy Martina",
+            "puesto": "Desarrollador web"
+        }
+    ],
+
+    "presentacion": [
+        {
+            "id": 1,
+            "foto": "./assets/img/memoji3.webp",
+            "texto": "ipsum dolor sit amet consectetur adipisicing elit. Est, impedit. Illum commodi, consectetur tempora exercitationem aliquid mollitia est dolor tempore earum, deleniti fuga, officia in eius voluptatem. Culpa, veniam quaerat?"
+        }
+    ],
+
+    "educacion": [
+        {
+            "id": 1,
+            "institucion": "Colegio Modelo Lomas",
+            "titulo": "Título secundario",
+            "inicio": "2015",
+            "fin": "2021",
+            "descripcion": "bachiller orientado en economía y administración" 
+        },
+        {
+            "id": 2,
+            "institucion": "Universidad Tecnológica Nacional",
+            "titulo": "",
+            "inicio": "2023",
+            "fin": "2028",
+            "descripcion": "estudiante de la carrera de ingeniería en sistemas de información" 
+        },
+        {
+            "id": 3,
+            "institucion": "Argentina Programa",
+            "titulo": "desarrollador web Full-Stack junior",
+            "inicio": "2022",
+            "fin": "2023",
+            "descripcion": "curso online" 
+        }        
+    ],
+
+    "experiencia": [
+        {
+            "id": 1,
+            "puesto":"",
+            "empresa": "",
+            "inicio": "",
+            "fin": ""
+        }
+    ],
+
+    "habilidades": [
+        {
+            "id": 1,
+            "nombre": "HTML",
+            "porcentaje": 70
+        },
+        {
+            "id": 2,
+            "nombre": "CSS",
+            "porcentaje": 50
+        },
+        {
+            "id": 3,
+            "nombre": "JS",
+            "porcentaje": 30
+        },
+        {
+            "id": 4,
+            "nombre": "ANGULAR",
+            "porcentaje": 57
+        }
+    ],
+
+    "proyectos": [
+        {
+            "id": 1,
+            "link":"",
+            "empresa": "",
+            "inicio": "",
+            "fin": ""
+        }
+    ],
+
+    "contacto": [
+        {
+            "instagram": "https://www.instagram.com/martufrenda/",
+            "linkedin": "http://linkedin.com/in/MartinaLaraFrenda",
+            "github": "https://github.com/MartinaFrenda",
+            "correo": "martufrenda5@gmail.com"
+        }
+    ]
 
 }

@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { Observable } from 'rxjs';
 import { infoPagina } from '../interfaces/info-pagina.interface';
 
 @Injectable({
@@ -8,18 +9,13 @@ import { infoPagina } from '../interfaces/info-pagina.interface';
 export class InfoPaginaService {
 
   info: infoPagina = {};
-  cargada = false;
 
   constructor( private http: HttpClient) {
-
    console.log("el servicio funciona");
-
-   // leer el json
-  this.http.get('assets/data/data-pagina.json')
-  .subscribe( (resp: infoPagina) => {
-    this.cargada = true;
-    this.info = resp;
-    console.log(resp);
-  } )
    }
+
+  getData():Observable<any> {
+  return this.http.get('./assets/data/data-pagina.json');
 }
+
+  }
