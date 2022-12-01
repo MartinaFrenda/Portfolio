@@ -13,7 +13,7 @@ export class LoginComponent implements OnInit {
 
   form: FormGroup;
 
-  email = '';
+  mail = '';
   password = '';
 
   constructor(public _servicio: InfoPaginaService, private authService: AuthService, private formBuilder: FormBuilder) { 
@@ -28,18 +28,39 @@ export class LoginComponent implements OnInit {
     event.preventDefault;
     if (this.form.valid){
       // llamamos a nuestro servicio para enviar los datos al servidor
-      //alguna logica extra
+      alert("Todo salió bien ¡Enviar el formulario!")
     }else{
       this.form.markAllAsTouched();
+      alert("Todo salió mal, no enviar el formulario")
     };
   }
 
 
   login(){
-    this.authService.login(this.email, this.password)
+    this.authService.login(this.mail, this.password)
   }
 
 
-  ngOnInit(): void {
+  ngOnInit(): void {}
+  //metodos para el formulario
+
+  //toma el dato del password
+  get Password(){
+    return this.form.get("password");
+  }
+
+  //toma el dato del mail
+  get Mail(){
+    return this.form.get("email");
+  }
+
+  //metodo de validacion de password
+  get PasswordValid(){
+    return this.Password?.touched && !this.Password?.valid;
+  }
+
+  //metodo de validacion de mail
+  get MailValid(){
+    return this.Mail?.touched && !this.Mail?.valid;
   }
 }

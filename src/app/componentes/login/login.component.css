@@ -11,3 +11,9 @@
 .logintitulo{
     margin-top: 4rem;
 }
+.border-danger{
+    border-color: red;
+}
+.error{
+    color: red;
+}

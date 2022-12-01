@@ -24,20 +24,37 @@
             <div class="col-2">
             </div>
             <div class="col-8">
-              <h1 class="violeta logintitulo">Iniciar Sesión</h1>
+              <h2 class="violeta logintitulo">Iniciar Sesión</h2>
+
               <form [formGroup]="form" (ngSubmit)="onEnviar($event)">
                   <div class="mb-3">
-                    <label for="Email" class="form-label">Email</label>
-                    <input type="email" class="form-control" formControlName="mail">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" formControlName="email" [class.border-danger]="MailValid">
+                  </div>
+                  <div *ngIf="Mail?.errors && Mail?.touched">
+                    <p *ngIf="Mail?.hasError('required')" class="error">
+                      El email es requerido.
+                    </p>
+                    <p *ngIf="Mail?.hasError('email')" class="error">
+                      El formato del email debe ser válido.
+                    </p>
                   </div>
                   <div class="mb-3">
                   <label for="exampleInputPassword1" class="form-label">Contraseña</label>
-                <!--<input type="password" _ngcontent-hvy-c50 formControlName="password" class="form-control ng-untouched ng-pristine ng-invalid" ng-reflect-name="password"> -->
-                  <input type="password" class="form-control" formControlName="password">
+                  <input type="password" class="form-control" formControlName="password" [class.border-danger]="MailValid">
+                  </div>
+                  <div *ngIf="Password?.errors && Password?.touched">
+                    <p *ngIf="Password?.hasError('required')" class="error">
+                      La contraseña es requerida.
+                    </p>
+                    <p *ngIf="Password?.hasError('minLength')" class="error">
+                      La contraseña debe tener al menos 8 carácteres.
+                    </p>
                   </div>
                   <button type="submit" class="btn btn-primary" routerLink="/panel">Entrar</button>
                   <small><a routerLink="/registro">Registrarse</a></small>
                 </form>
+
             </div>
             <div class="col-2">
             </div>
