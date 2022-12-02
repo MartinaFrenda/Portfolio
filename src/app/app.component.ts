@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { InfoPaginaService } from './services/info-pagina.service';
 
 @Component({

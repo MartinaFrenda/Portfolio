@@ -47,7 +47,7 @@
                     <p *ngIf="Password?.hasError('required')" class="error">
                       La contraseña es requerida.
                     </p>
-                    <p *ngIf="Password?.hasError('minLength')" class="error">
+                    <p *ngIf="Password?.errors?.['minlength']" class="error">
                       La contraseña debe tener al menos 8 carácteres.
                     </p>
                   </div>
