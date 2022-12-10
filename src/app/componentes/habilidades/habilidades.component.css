@@ -1,4 +1,10 @@
 /* habilidades */
-.habilidades{
+.violeta.habilidades{
     margin-top: 4rem;
+}
+.progress{
+    margin-bottom: 0.7rem;
+}
+.progress-bar{ 
+    background-color: #7E429B; 
 }

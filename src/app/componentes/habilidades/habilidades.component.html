@@ -1,8 +1,13 @@
 <!--Habilidades-->
 <section class="habilidades">
-    <div class="container">
-      <h1 class="violeta habilidades">Habilidades</h1>
-      <h4>...</h4>
+  <div class="container">
+    <h2 class="violeta habilidades">Habilidades</h2>
+    <div class="progress" *ngFor="let habilidades of habilidades">
+      <div class="progress-bar progress-bar-striped progress-bar-animated" [style.width.%]="habilidades.porcentaje" role="progressbar" 
+      aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+         {{ habilidades.nombre }}
+      </div>
     </div>
-  </section>
+  </div>
+</section>
 

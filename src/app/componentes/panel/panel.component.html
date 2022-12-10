@@ -42,15 +42,23 @@
           <div class="tab-content" id="nav-tabContent">
             <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-banner-list">
                 <div class="container px-5">
-                    <h1 class="violeta">Banner</h1>
+                    <h2 class="violeta">Banner</h2>
                     <form>
                         <div class="mb-3 redes">
                           <label for="imagen" class="form-label">Imagen</label>
                           <input class="form-control" type="file" id="imagen">
                         </div>
                         <div class="mb-3 redes">
+                          <label for="logo" class="form-label">Logo barra de navegación</label>
+                          <input class="form-control" type="file" id="logo">
+                        </div>
+                        <div class="mb-3 redes">
                           <label for="texto" class="form-label">Texto</label>
                           <input type="text" class="form-control" id="texto">
+                        </div>
+                        <div class="mb-3 redes">
+                          <label for="puesto" class="form-label">Puesto</label>
+                          <input type="text" class="form-control" id="puesto">
                         </div>
                         <button type="submit" class="btn btn-primary redes">Guardar</button>
                       </form>
@@ -58,7 +66,7 @@
             </div>
             <div class="tab-pane fade" id="list-presentacion" role="tabpanel" aria-labelledby="list-presentacion-list">
                 <div class="container px-5">
-                    <h1 class="violeta">Presentación</h1>
+                    <h2 class="violeta">Presentación</h2>
                     <form>
                         <div class="mb-3 redes">
                           <label for="fotoperfil" class="form-label">Foto de perfil</label>
@@ -74,19 +82,27 @@
             </div>
             <div class="tab-pane fade" id="list-educacion" role="tabpanel" aria-labelledby="list-educacion-list">
                 <div class="container px-5">
-                    <h1 class="violeta">Educación</h1>
+                    <h2 class="violeta">Educación</h2>
                     <form>
                         <div class="mb-3 redes">
-                          <label for="colegio" class="form-label"> {{_servicio.info.colegio}} </label>
-                          <input type="text" class="form-control" id="colegio">
+                          <label for="institucion" class="form-label">Institución</label>
+                          <input type="text" class="form-control" id="institucion">
                         </div>
                         <div class="mb-3 redes">
-                          <label for="curso" class="form-label">{{_servicio.info.curso}}</label>
-                          <input type="text" class="form-control" id="curso">
+                          <label for="titulo" class="form-label">Título</label>
+                          <input type="text" class="form-control" id="titulo">
                         </div>
                         <div class="mb-3 redes">
-                            <label for="facultad" class="form-label">{{_servicio.info.facultad}}</label>
-                            <input type="text" class="form-control" id="facultad">
+                            <label for="descripcion" class="form-label">Descripción</label>
+                            <input type="text" class="form-control" id="descripcion">
+                          </div>
+                          <div class="mb-3 redes">
+                            <label for="inicio" class="form-label">Inicio</label>
+                            <input type="text" class="form-control" id="inicio">
+                          </div>
+                          <div class="mb-3 redes">
+                            <label for="fin" class="form-label">Fin</label>
+                            <input type="text" class="form-control" id="fin">
                           </div>
                         <button type="submit" class="btn btn-primary redes">Guardar</button>
                       </form>
@@ -94,24 +110,64 @@
             </div>
             <div class="tab-pane fade" id="list-experiencia" role="tabpanel" aria-labelledby="list-experiencia-list">
                     <div class="container px-5">
-                    <h1 class="violeta">Experiencia</h1>
+                    <h2 class="violeta">Experiencia</h2>
                     <form>
+                      <div class="mb-3 redes">
+                        <label for="empresa" class="form-label">Empresa</label>
+                        <input type="text" class="form-control" id="empresa">
+                      </div>
+                      <div class="mb-3 redes">
+                          <label for="puesto" class="form-label">Puesto</label>
+                          <input type="text" class="form-control" id="puesto">
+                        </div>
                         <div class="mb-3 redes">
-                          <label for="experiencia" class="form-label">...</label>
-                          <input type="text" class="form-control" id="experiencia">
+                          <label for="inicio" class="form-label">Inicio</label>
+                          <input type="text" class="form-control" id="inicio">
+                        </div>
+                        <div class="mb-3 redes">
+                          <label for="fin" class="form-label">Fin</label>
+                          <input type="text" class="form-control" id="fin">
                         </div>
                         <button type="submit" class="btn btn-primary redes">Guardar</button>
                       </form>
                     </div>
             </div>
-            <div class="tab-pane fade" id="list-habilidades" role="tabpanel" aria-labelledby="list-habilidades-list">texto 5</div>
+            <div class="tab-pane fade" id="list-habilidades" role="tabpanel" aria-labelledby="list-habilidades-list">
+              <div class="container px-5">
+                <h2 class="violeta">Habilidades</h2>
+                <form>
+                    <div class="mb-3 redes">
+                      <label for="nombre" class="form-label">Nombre</label>
+                      <input type="text" class="form-control" id="nombre">
+                    </div>
+                    <div class="mb-3 redes">
+                      <label for="porcentaje" class="form-label">Porcentaje</label>
+                      <input type="text" class="form-control" id="porcentaje">
+                    </div>
+                    <button type="submit" class="btn btn-primary redes">Guardar</button>
+                  </form>
+                </div>
+            </div>
+
             <div class="tab-pane fade" id="list-proyectos" role="tabpanel" aria-labelledby="list-proyectos-list">
                 <div class="container px-5">
-                    <h1 class="violeta">Proyectos</h1>
+                    <h2 class="violeta">Proyectos</h2>
                     <form>
+                      <div class="mb-3 redes">
+                        <label for="empresa" class="form-label">Empresa</label>
+                        <input type="text" class="form-control" id="empresa">
+                      </div>
+                      <div class="mb-3 redes">
+                          <label for="link" class="form-label">Link</label>
+                          <input type="text" class="form-control" id="link">
+                        </div>
                         <div class="mb-3 redes">
-                          <label for="proyectos" class="form-label">...</label>
-                          <input type="text" class="form-control" id="proyectos">
+                          <label for="inicio" class="form-label">Inicio</label>
+                          <input type="text" class="form-control" id="inicio">
+                        </div>
+                        <div class="mb-3 redes">
+                          <label for="fin" class="form-label">Fin</label>
+                          <input type="text" class="form-control" id="fin">
                         </div>
                         <button type="submit" class="btn btn-primary redes">Guardar</button>
                       </form>
@@ -119,7 +175,7 @@
             </div>
             <div class="tab-pane fade" id="list-contacto" role="tabpanel" aria-labelledby="list-contacto-list">
                 <div class="container px-5">
-                <h1 class="violeta">Redes sociales</h1>
+                <h2 class="violeta">Redes sociales</h2>
                 <form>
                     <div class="mb-3 redes">
                       <label for="instagram" class="form-label">Instagram</label>
@@ -132,6 +188,10 @@
                     <div class="mb-3 redes">
                         <label for="github" class="form-label">Github</label>
                         <input type="text" class="form-control" id="github">
+                      </div>
+                      <div class="mb-3 redes">
+                        <label for="correo" class="form-label">Correo</label>
+                        <input type="text" class="form-control" id="correo">
                       </div>
                     <button type="submit" class="btn btn-primary redes">Guardar</button>
                   </form>
