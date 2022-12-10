@@ -73,10 +73,13 @@
   </section>
 <!--Proyectos-->
 <section class="proyectos">
-  <div class="container" *ngFor="let proyectos of proyectos">
+  <div class="container" >
     <h2 class="violeta">Proyectos</h2>
+  <div class="proyecto" *ngFor="let proyectos of proyectos">
     <h5> {{proyectos.empresa}} </h5>
     <h6> {{proyectos.inicio}}/{{proyectos.fin}} </h6>
+    <a [href]="proyectos.link" target="_blank" class="link">Ver</a>
+    </div>
   </div>
 </section>
 

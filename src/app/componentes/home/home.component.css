@@ -31,6 +31,7 @@ h1.intro{
 /* habilidades */
 .violeta.habilidades{
     margin-top: 4rem;
+    margin-bottom: 1rem;
 }
 .progress{
     margin-bottom: 0.7rem;
@@ -43,6 +44,13 @@ h1.intro{
 .proyectos{
     margin-top: 4rem;
 }
+.proyecto{
+    margin-bottom: 1rem;
+}
+a.link:link {color: #000;}
+a.link:visited {color:#000;}
+a.link:active {color:#000;}
+
 /* contacto */
 .contacto{
     background-color: #000;
