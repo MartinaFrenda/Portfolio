@@ -63,18 +63,10 @@
 <section class="habilidades">
     <div class="container">
       <h2 class="violeta habilidades">Habilidades</h2>
-      <div class="progress-circle-container" *ngFor="let habilidades of habilidades">
-        <div class="progress-circle progress-70">
-          <span>{{ habilidades.nombre }}</span>
-        </div>
-        <div class="progress-circle progress-50">
-          <span>{{ habilidades.nombre }}</span>
-        </div>
-        <div class="progress-circle progress-30">
-          <span>{{ habilidades.nombre }}</span>
-        </div>
-        <div class="progress-circle progress-57">
-          <span>{{ habilidades.nombre }}</span>
+      <div class="progress" *ngFor="let habilidades of habilidades">
+        <div class="progress-bar progress-bar-striped progress-bar-animated" [style.width.%]="habilidades.porcentaje" role="progressbar" 
+        aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+           {{ habilidades.nombre }} {{habilidades.porcentaje}}%
         </div>
       </div>
     </div>
