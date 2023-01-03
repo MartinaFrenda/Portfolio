@@ -1,11 +1,11 @@
 <!--Educacióm-->
 <section class="educacion">
-  <div class="container">
-    <h1 class="violeta">Educación</h1>
-    <div class="educaciontexto" *ngFor="let educacion of educacion">
-       <h4> <b>{{ educacion.institucion }}</b> {{ educacion.titulo}} </h4>
-       <h4> {{ educacion.descripcion }} </h4>
-       <h6> {{ educacion.inicio }}/{{ educacion.fin }} </h6>
-      </div>
-   </div>
-</section>
+   <div class="container">
+     <h2 class="violeta">Educación</h2>
+     <div class="educaciontexto" *ngFor="let educacion of educacion">
+        <h5> <b>{{ educacion.institucion }}</b> {{ educacion.titulo}} </h5>
+        <h5> {{ educacion.descripcion }} </h5>
+        <h6> {{ educacion.inicio }}/{{ educacion.fin }} </h6>
+       </div>
+    </div>
+ </section>

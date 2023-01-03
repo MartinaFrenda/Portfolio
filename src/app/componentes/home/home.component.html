@@ -1,76 +1,15 @@
   <!--navbar-->
-  <nav class="navbar navbar-expand-lg">
-    <div class="container-fluid" *ngFor="let banner of banner">
-      <a class="navbar-brand" routerLink="/home">
-        <img [src]="banner.logoargentina" alt="logoArgPrograma" class="letras-negras" width="150">
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" 
-      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <i class="fa-solid fa-bars"></i> 
-      </button>
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <a class="nav-link active" aria-current="page" href="#contacto">Contacto</a>
-          <!-- Button inicio de sesion-->
-           <a routerLink="/login" aria-current="page" class="nav-link active">Ingresar</a>
-        </div>
-      </div>
-    </div>
-  </nav>
+  <app-header></app-header>
 <!--banner-->
-<section class="banner">
-    <div class="card text-bg-dark text-center" *ngFor="let banner of banner">
-      <img [src]="banner.foto" class="card-img img-fluid" alt="banner">
-        <div class="card-img-overlay">
-        <h1 class="card-title intro"> {{banner.texto}} </h1>
-        <h5 class="card-text"> {{banner.puesto}} </h5>
-      </div>
-    </div>
-    </section>
+    <app-banner></app-banner>
 <!--Presentación-->
-<section class="presentacion">
-    <div class="container">
-      <div class="row" *ngFor="let presentacion of presentacion">
-        <div class="col-lg-2 flex-colum text-center text-lg-start">
-          <img [src]="presentacion.foto" class="rounded-circle img-fluid avatar" width="200" alt="avatar">
-        </div>
-        <div class="col-lg-10 flex-colum text-center text-lg-start presentacion">
-          <h5> {{ presentacion.texto }} </h5>
-        </div>
-      </div>
-    </div>
-    </section>
+    <app-presentacion></app-presentacion>
 <!--Educacióm-->
-<section class="educacion">
-    <div class="container">
-      <h2 class="violeta">Educación</h2>
-      <div class="educaciontexto" *ngFor="let educacion of educacion">
-         <h5> <b>{{ educacion.institucion }}</b> {{ educacion.titulo}} </h5>
-         <h5> {{ educacion.descripcion }} </h5>
-         <h6> {{ educacion.inicio }}/{{ educacion.fin }} </h6>
-        </div>
-     </div>
-  </section>
+  <app-educacion></app-educacion>
 <!--Experiencia-->
-<section class="experiencia">
-    <div class="container" *ngFor="let experiencia of experiencia">
-      <h2 class="violeta">Experiencia</h2>
-      <h5><b>{{experiencia.empresa}}</b> {{experiencia.puesto}} </h5>
-      <h6> {{experiencia.inicio}}/{{experiencia.fin}} </h6>
-    </div>
-  </section>
+<app-experiencia></app-experiencia>
   <!--Habilidades-->
-<section class="habilidades">
-    <div class="container">
-      <h2 class="violeta habilidades">Habilidades</h2>
-      <div class="progress" *ngFor="let habilidades of habilidades">
-        <div class="progress-bar progress-bar-striped progress-bar-animated" [style.width.%]="habilidades.porcentaje" role="progressbar" 
-        aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-           {{ habilidades.nombre }}
-        </div>
-      </div>
-    </div>
-  </section>
+  <app-habilidades></app-habilidades>
 <!--Proyectos-->
 <section class="proyectos">
   <div class="container" >
