@@ -2,19 +2,19 @@
   <!--Contacto-->  
   <section class="contacto" id="contacto">
     <div class="container">
-      <h1 class="violeta text-center text-lg-start">Contacto</h1>
+      <h2 class="violeta text-center text-lg-start">Contacto</h2>
        <div class="row" *ngFor="let contacto of contacto">
         <div class="col-lg-6 flex-colum text-center text-lg-start">
-        <h4 class="texto">Mis redes sociales</h4>
+        <h6 class="texto">Mis redes sociales</h6>
         <ul style="list-style: none" class="list-group list-group-horizontal texto">
           <li class="ist-group-item"> <a class="iconos" [href]="contacto.instagram" target="_blank"><i class="fa-brands fa-instagram fa-2x"></i></a></li>
           <li class="ist-group-item"> <a class="iconos" [href]="contacto.linkedin" target="_blank"><i class="fa-brands fa-linkedin fa-2x"></i></a></li>
           <li class="ist-group-item"> <a class="iconos" [href]="contacto.github" target="_blank"><i class="fa-brands fa-github fa-2x"></i></a></li>
-        </ul>
+        </ul>   
        </div>
        <div class="col-lg-6 flex-colum text-center text-lg-start">
-        <h4 class="texto">Mi correo electrónico</h4>
-        <h6 class="texto">{{contacto.correo }}</h6>
+        <h6 class="texto">Mi correo electrónico</h6>
+        <p class="texto">{{contacto.correo}}</p>
        </div>
      </div>
      <p class="text-center texto derechos"> <small><i class="fa-regular fa-copyright"></i>Copyright Martina Lara Frenda - {{ anio }} </small></p>
